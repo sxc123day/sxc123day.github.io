@@ -1,0 +1,1 @@
+import{d as r,o as s,c as a,t as e,k as o}from"./vendor.cd29777a.js";var d=r({name:"HelloWorld",props:{msg:{type:String,required:!0}}});const t=o()(((r,o,d,t,n,p)=>(s(),a("h1",null,e(r.msg),1))));d.render=t,d.__scopeId="data-v-d731319e";export{d as _};

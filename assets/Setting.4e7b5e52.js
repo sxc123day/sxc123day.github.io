@@ -1,0 +1,1 @@
+import{_ as o}from"./HelloWorld.96400606.js";import{d as e,r as l,o as r,c as s,i as a,F as n}from"./vendor.cd29777a.js";var t=e({name:"Setting",components:{HelloWorld:o}});const d=a("h1",null,"This is a home page",-1);t.render=function(o,e,t,i,m,c){const u=l("HelloWorld");return r(),s(n,null,[d,a(u,{msg:"Hello Vue 3.0 + Vite"})],64)};export default t;
