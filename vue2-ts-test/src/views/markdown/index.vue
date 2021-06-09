@@ -1,20 +1,28 @@
 <template>
-  <div v-html="readme"></div>
+  <div class="md-container">
+    <img src="@/assets/logo.png"
+         alt="">
+    <div v-html="mdTest1"></div>
+  </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
 import md2html from "@/utils/md2html";
-import * as readme from "../../../README.md";
+import mdTest1 from "./mdFiles/test1.md";
 export default Vue.extend({
   data() {
     return {
-      readme: ""
+      mdTest1: ""
     };
   },
   created() {
-    this.readme = md2html(readme);
+    this.mdTest1 = md2html(mdTest1);
   },
   methods: {}
 });
 </script>
-<style scoped="true"></style>
+<style lang="scss" scoped>
+.md-container {
+  text-align: left;
+}
+</style>
