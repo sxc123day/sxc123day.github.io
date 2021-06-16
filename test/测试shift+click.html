@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="clickBtn(event)">点击</button>
+</body>
+<script>
+  function clickBtn(event) {
+    console.log(event, window.event);
+    console.log(event.metaKey, 'metaKey');
+    console.log(event.shiftKey, 'shiftKey');
+    for (let i in event) {
+      if (i.toLowerCase().includes('key')) {
+        console.log(i)
+      }
+    }
+    // if (event.shiftKey) {
+    //   alert('按了shift')
+    // } else {
+    //   alert('没按shift')
+    // }
+  }
+</script>
+
+</html>
